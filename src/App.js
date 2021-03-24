@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import Cms from '../src/pages/Cms'
+
+export const Container = styled.div`
+  min-width: 500px;
+  max-width: 500px;
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 50px auto;
+`;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <Cms/>
+  )
 }
 
 export default App;
